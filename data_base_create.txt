@@ -1,0 +1,14 @@
+--just open MYSQL WORKBENCH and past this code:--
+
+create database if not exists my_data;
+USE my_data;
+
+create table if not exists users(
+  user_id int primary key auto_increment,
+  user_name VARCHAR(40) not null,
+  user_password VARCHAR(200) not null
+);
+
+insert into users (user_name,user_password) values ("reda", "password!")
+
+--you can make your owen username and password:--
